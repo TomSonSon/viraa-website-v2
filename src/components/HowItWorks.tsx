@@ -19,7 +19,7 @@ const HowItWorks = () => {
     {
       icon: Bell,
       title: "Get Early Warnings",
-      description: "Receive notifications 1-2 days before symptoms appear, plus personalized recovery recommendations.",
+      description: "Receive notifications 1-2 days before disruptions to your wellbeing appear, plus personalized guidance recommendations.",
       color: "text-accent",
       bgColor: "bg-accent/10",
     },

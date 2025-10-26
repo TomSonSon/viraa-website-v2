@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-health.jpg";
+import appScreenshot from "@/assets/app-screenshot.png";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -9,6 +10,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-hero opacity-10" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex items-center gap-3 mb-8 animate-fade-in">
+          <img src={logo} alt="Viraa logo" className="h-12 w-auto" />
+          <span className="text-2xl font-bold">Viraa</span>
+        </div>
+        
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8 animate-fade-in">
@@ -23,15 +29,15 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Know you're getting sick{" "}
+              Detect disruptions to your wellbeing{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
-                before symptoms appear
+                1-2 days in advance
               </span>
             </h1>
             
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
               Viraa analyzes your wearable data to detect subtle changes in your health patterns, 
-              giving you 1-2 days advance warning before you feel any symptoms.
+              giving you advance warning of disruptions to your wellbeing.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -64,11 +70,10 @@ const Hero = () => {
           <div className="relative lg:block animate-fade-in-up">
             <div className="relative rounded-3xl overflow-hidden shadow-glow">
               <img 
-                src={heroImage} 
-                alt="Viraa Health app visualization showing wearable data analysis" 
+                src={appScreenshot} 
+                alt="Viraa Health app showing wellbeing insights and health pattern analysis" 
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-hero opacity-20" />
             </div>
             
             {/* Floating card */}

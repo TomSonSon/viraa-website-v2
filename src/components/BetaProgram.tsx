@@ -15,8 +15,8 @@ const BetaProgram = () => {
     },
     {
       icon: CheckCircle2,
-      title: "Pre-Warning System",
-      description: "Get alerts when your data shows unusual patterns.",
+      title: "Early Alert System",
+      description: "Get alerts when your data shows deviations from your normal patterns.",
     },
   ];
 
@@ -60,7 +60,7 @@ const BetaProgram = () => {
                   "Access to the beta for the next few months",
                   "Sunday check-in notifications (just 10 seconds)",
                   "Early insights into recovery & stress patterns",
-                  "Pre-warning when unusual health changes are detected",
+                  "Advance warning when deviations in your wellbeing patterns are detected",
                   "Direct feedback channel to shape the product",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">

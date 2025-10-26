@@ -5,20 +5,20 @@ const Features = () => {
   const features = [
     {
       icon: AlertTriangle,
-      title: "Sickness Detection",
-      description: "Get notified 1-2 days before symptoms appear. Our AI detects patterns in your biometric data that indicate your body is fighting something off.",
-      gradient: "from-primary to-primary-glow",
+      title: "Wellbeing Alerts",
+      description: "Get notified 1-2 days in advance of disruptions to your wellbeing. Our AI detects subtle deviations in your health patterns that may affect how you feel.",
+      gradient: "from-primary to-accent-red",
     },
     {
       icon: LineChart,
-      title: "Health Insights",
-      description: "Understand your unique health patterns with detailed analytics on recovery, stress, sleep quality, and overall wellness trends.",
+      title: "Pattern Analysis",
+      description: "Understand your unique wellbeing patterns with detailed analytics on recovery, stress, sleep quality, and overall health trends.",
       gradient: "from-secondary to-purple-400",
     },
     {
       icon: Heart,
-      title: "Recovery Tips",
-      description: "Receive personalized recommendations to boost your immune system and optimize recovery based on your current health state.",
+      title: "Personalized Guidance",
+      description: "Receive tailored recommendations to maintain your wellbeing and support your body based on your current health patterns.",
       gradient: "from-accent to-emerald-400",
     },
   ];
