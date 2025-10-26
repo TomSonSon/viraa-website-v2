@@ -67,8 +67,8 @@ const Hero = () => {
           </div>
           
           {/* Image */}
-          <div className="relative lg:block animate-fade-in-up">
-            <div className="relative rounded-3xl overflow-hidden shadow-glow">
+          <div className="relative lg:flex lg:justify-center animate-fade-in-up">
+            <div className="relative rounded-3xl overflow-hidden shadow-glow max-w-sm mx-auto">
               <img 
                 src={appScreenshot} 
                 alt="Viraa Health app showing wellbeing insights and health pattern analysis" 
