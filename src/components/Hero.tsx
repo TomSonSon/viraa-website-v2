@@ -82,7 +82,7 @@ const Hero = () => {
           
           {/* Image */}
           <div className="relative lg:flex lg:justify-center animate-fade-in-up">
-            <div className="relative rounded-3xl overflow-hidden shadow-glow max-w-xs mx-auto">
+            <div className="relative rounded-3xl overflow-hidden shadow-glow max-w-64 mx-auto group hover:scale-105 transition-transform duration-300">
               <img 
                 src={appScreenshot} 
                 alt="Viraa Health app showing wellbeing insights and health pattern analysis" 
@@ -91,7 +91,7 @@ const Hero = () => {
             </div>
             
             {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-2xl shadow-soft animate-float hidden lg:block">
+            <div className="absolute -bottom-6 left-8 bg-card p-6 rounded-2xl shadow-soft animate-float hidden lg:block">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
