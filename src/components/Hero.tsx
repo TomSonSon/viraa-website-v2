@@ -5,7 +5,7 @@ import logo from "@/assets/logo.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-soft">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-soft py-12">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-hero opacity-10" />
       
