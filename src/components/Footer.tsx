@@ -20,9 +20,6 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Contact
-            </a>
           </div>
 
           <p className="text-sm text-muted-foreground">

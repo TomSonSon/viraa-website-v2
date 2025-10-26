@@ -73,7 +73,12 @@ const BetaProgram = () => {
           </div>
 
           <div className="text-center animate-fade-in-up">
-            <Button variant="hero" size="xl" className="group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => window.open('https://apps.apple.com/us/app/viraa/id6741229335', '_blank')}
+            >
               Download & Join Beta
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
