@@ -5,7 +5,7 @@ const Features = () => {
   const features = [
     {
       icon: AlertTriangle,
-      title: "Early Sickness Detection",
+      title: "Wellbeing Alerts",
       description: "Get notified 1-2 days in advance of disruptions to your wellbeing. Our AI detects subtle deviations in your health patterns that may affect how you feel.",
       gradient: "from-primary to-primary",
     },
