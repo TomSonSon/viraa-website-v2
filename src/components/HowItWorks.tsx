@@ -1,4 +1,4 @@
-import { Activity, Brain, Bell } from "lucide-react";
+import { Activity, Brain, Bell, MessageCircle } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
@@ -19,9 +19,16 @@ const HowItWorks = () => {
     {
       icon: Bell,
       title: "Get Early Warnings",
-      description: "Receive notifications 1-2 days before disruptions to your wellbeing appear, plus personalized guidance recommendations.",
+      description: "Receive notifications 1-2 days before disruptions to your wellbeing appear, giving you time to rest and recover.",
       color: "text-accent",
       bgColor: "bg-accent/10",
+    },
+    {
+      icon: MessageCircle,
+      title: "Chat with Viraa AI",
+      description: "Ask questions about your health data, get instant insights, and receive personalized recommendations anytime.",
+      color: "text-primary",
+      bgColor: "bg-primary/10",
     },
   ];
 
@@ -37,7 +44,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {steps.map((step, index) => (
             <div
               key={index}

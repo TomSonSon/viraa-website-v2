@@ -37,7 +37,7 @@ const Hero = () => {
             
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
               Viraa analyzes your wearable data to detect subtle changes in your health patterns, 
-              giving you advance warning of disruptions to your wellbeing.
+              giving you advance warning of disruptions to your wellbeing. Chat with our AI assistant for instant insights.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
