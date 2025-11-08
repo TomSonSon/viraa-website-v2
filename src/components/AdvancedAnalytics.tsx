@@ -7,16 +7,19 @@ const AdvancedAnalytics = () => {
       icon: TrendingUp,
       title: "Historical Trends",
       description: "View your health data over time with interactive charts showing daily, weekly, monthly, and 6-month views.",
+      gradient: "from-primary to-primary",
     },
     {
       icon: BarChart3,
       title: "Baseline Comparison",
       description: "Compare your current metrics against your 4-week baseline to identify significant deviations and patterns.",
+      gradient: "from-secondary to-purple-400",
     },
     {
       icon: Calendar,
       title: "Sick Day Detection",
       description: "Automatically identifies periods when you were unwell based on multiple health signals and patterns.",
+      gradient: "from-accent to-emerald-400",
     },
   ];
 
@@ -40,7 +43,7 @@ const AdvancedAnalytics = () => {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <CardContent className="p-8 space-y-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-primary group-hover:scale-110 transition-transform">
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${feature.gradient} group-hover:scale-110 transition-transform`}>
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 
@@ -97,18 +100,38 @@ const AdvancedAnalytics = () => {
                   
                   {/* Simple chart representation */}
                   <div className="relative h-48 flex items-end justify-around gap-2">
-                    {[65, 45, 80, 50, 75, 60, 85].map((height, i) => (
-                      <div key={i} className="flex-1 flex flex-col items-center gap-2">
+                    {[
+                      { height: 65, label: 'Mon', sick: false },
+                      { height: 45, label: 'Tue', sick: false },
+                      { height: 80, label: 'Wed', sick: true },
+                      { height: 50, label: 'Thu', sick: true },
+                      { height: 75, label: 'Fri', sick: false },
+                      { height: 60, label: 'Sat', sick: false },
+                      { height: 85, label: 'Sun', sick: false }
+                    ].map((day, i) => (
+                      <div key={i} className="flex-1 flex flex-col items-center gap-2 relative">
+                        {/* Sick day overlay */}
+                        {day.sick && (
+                          <div 
+                            className="absolute bottom-8 left-0 right-0 bg-accent-red/20 rounded"
+                            style={{ height: `${day.height}%` }}
+                          />
+                        )}
                         <div 
-                          className="w-full bg-gradient-to-t from-primary to-primary-glow rounded-t-lg transition-all hover:scale-105"
-                          style={{ height: `${height}%` }}
-                        ></div>
-                        <span className="text-xs text-muted-foreground">
-                          {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i]}
+                          className="w-full bg-gradient-to-t from-primary to-primary-glow rounded-t-lg transition-all hover:scale-105 relative z-10"
+                          style={{ height: `${day.height}%` }}
+                        >
+                          <div className="absolute inset-x-0 top-0 h-px bg-muted-foreground/20 border-dashed border-t" />
+                        </div>
+                        <span className="text-xs text-muted-foreground font-medium">
+                          {day.label}
                         </span>
                       </div>
                     ))}
                   </div>
+                  
+                  {/* Baseline line */}
+                  <div className="absolute top-20 left-0 right-0 h-0.5 border-t-2 border-dashed border-muted-foreground/40 pointer-events-none" />
                 </div>
               </div>
             </CardContent>
