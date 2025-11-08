@@ -4,9 +4,9 @@ import { CheckCircle2, Clock, Gift, ArrowRight } from "lucide-react";
 const BetaProgram = () => {
   const benefits = [
     {
-      icon: Clock,
-      title: "Just 10 Seconds Weekly",
-      description: "Quick check-in every Sunday. That's all it takes.",
+      icon: CheckCircle2,
+      title: "Early Alert System",
+      description: "Get alerts when your data shows deviations from your normal patterns.",
     },
     {
       icon: Gift,
@@ -14,9 +14,9 @@ const BetaProgram = () => {
       description: "Be first to get recovery & stress insights.",
     },
     {
-      icon: CheckCircle2,
-      title: "Early Alert System",
-      description: "Get alerts when your data shows deviations from your normal patterns.",
+      icon: Clock,
+      title: "Just 10 Seconds Weekly",
+      description: "Quick check-in every Sunday. That's all it takes.",
     },
   ];
 
